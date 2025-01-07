@@ -20,12 +20,28 @@ document.addEventListener('DOMContentLoaded', function() {
 // Modale
 document.addEventListener('DOMContentLoaded', function() {
     const menuContactLink = document.querySelector('.open-modal a');
+    const singleContactBtn = document.querySelector('.contact-btn');
     const modal = document.getElementById('contact-modal');
 
-    // Ouverture de la modale
+    // Ouverture de la modale Menu
     if (menuContactLink && modal) {
         menuContactLink.addEventListener('click', function(e) {
             e.preventDefault();
+            modal.classList.add('show');
+        });
+    }
+
+    // Ouverture de la modale Bouton
+    if (singleContactBtn && modal) {
+        singleContactBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // Récupère la référence de la photo
+            const photoRef = this.getAttribute('data-ref');
+            // On met à jour le champ de référence dans le formulaire
+            const refInput = document.querySelector('input[name="reference"]');
+            if (refInput) {
+                refInput.value = photoRef;
+            }
             modal.classList.add('show');
         });
     }
