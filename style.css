@@ -1,0 +1,211 @@
+@charset "UTF-8";
+/*
+Theme Name: Motaphoto
+Theme URI: 
+Author: [Votre Nom]
+Description: Thème photo pour Nathalie Mota
+Version: 1.0
+*/
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/poppins-v21-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* space-mono-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/space-mono-v14-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* space-mono-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Space Mono";
+  font-style: italic;
+  font-weight: 400;
+  src: url("assets/fonts/space-mono-v14-latin-italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* space-mono-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: url("assets/fonts/space-mono-v14-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* space-mono-700italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Space Mono";
+  font-style: italic;
+  font-weight: 700;
+  src: url("assets/fonts/space-mono-v14-latin-700italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  font-family: "Space Mono", monospace;
+}
+
+header {
+  text-transform: uppercase;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-wrapper {
+  width: 100%;
+  max-width: 1440px;
+  background: white;
+}
+
+.navbar {
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 146px;
+  box-shadow: 0 4px 14px 10px rgba(0, 0, 0, 0.03);
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 45px;
+}
+.header-menu a {
+  color: #000;
+}
+
+.logo img {
+  height: 14px;
+  width: auto;
+}
+
+.menu-item a:hover {
+  font-weight: 700;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    min-height: 72px;
+    padding: 0 40px;
+  }
+  .logo img {
+    height: 9px;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .header-menu {
+    position: fixed;
+    top: 72px;
+    right: -100%;
+    gap: 0;
+    flex-direction: column;
+    background-color: #E00000;
+    width: 100%;
+    height: -moz-available;
+    height: fill-available;
+    height: -webkit-fill-available;
+    text-align: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+  }
+  .header-menu .menu-item {
+    margin: 16px 0;
+  }
+  .header-menu a {
+    color: #FFF;
+    text-align: center;
+    font-family: "Space Mono";
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .header-menu.active {
+    right: 0;
+    height: -moz-available;
+    height: fill-available;
+    height: -webkit-fill-available;
+    justify-content: center;
+  }
+}
+.site-footer {
+  height: 40px;
+  align-content: center;
+  text-align: center;
+  border-top: 1.5px solid #000;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 50px;
+}
+.footer-menu a {
+  color: #000;
+  font-family: "Space Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 430px) {
+  .footer-menu {
+    flex-direction: column;
+    gap: 24px;
+    margin: 43px 0;
+  }
+}/*# sourceMappingURL=style.css.map */

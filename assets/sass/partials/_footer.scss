@@ -1,0 +1,29 @@
+.site-footer {
+    height: 40px;
+    align-content: center;
+    text-align: center;
+    border-top: 1.5px solid $black;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 50px;
+
+    a {
+        @include dmfooter;
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .footer-menu {
+        flex-direction: column;
+        gap: 24px;
+        margin: 43px 0;
+    }
+
+    
+}

@@ -1,0 +1,33 @@
+// Reset basique
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-family: $font-primary;
+}
+
+header {
+    text-transform: uppercase;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.site-wrapper {
+    width: 100%;
+    max-width: $desktop;
+    background: white;
+}
