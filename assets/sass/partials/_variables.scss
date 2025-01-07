@@ -152,3 +152,14 @@ $grisc: #E5E5E5;
     line-height: normal;
     text-transform: uppercase;
 }
+
+// Modale
+@mixin modale {
+    color: #313144;
+    font-family: "Poppins";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}

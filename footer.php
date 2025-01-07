@@ -11,6 +11,7 @@
     </footer>
 </div>
 
+<?php get_template_part('template_parts/modal', 'contact'); ?>
 <?php wp_footer(); ?>
 </body>
 </html>
