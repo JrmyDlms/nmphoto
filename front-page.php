@@ -30,7 +30,7 @@
                     <option value="">CATÉGORIES</option>
                     <?php 
                     $categories = get_terms('categorie');
-                    foreach($categories as $category) : ?>
+                    foreach ($categories as $category) : ?>
                         <option value="<?php echo $category->slug; ?>"><?php echo $category->name; ?></option>
                     <?php endforeach; ?>
                 </select>
@@ -39,7 +39,7 @@
                     <option value="">FORMATS</option>
                     <?php 
                     $formats = get_terms('format');
-                    foreach($formats as $format) : ?>
+                    foreach ($formats as $format) : ?>
                         <option value="<?php echo $format->slug; ?>"><?php echo $format->name; ?></option>
                     <?php endforeach; ?>
                 </select>

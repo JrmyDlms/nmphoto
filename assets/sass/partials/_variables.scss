@@ -2,45 +2,48 @@
 
 /* poppins-regular - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    src: url('assets/fonts/poppins-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/poppins-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
 /* space-mono-regular - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Space Mono';
-    font-style: normal;
-    font-weight: 400;
-    src: url('assets/fonts/space-mono-v14-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* space-mono-italic - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Space Mono';
-    font-style: italic;
-    font-weight: 400;
-    src: url('assets/fonts/space-mono-v14-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* space-mono-700 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Space Mono';
-    font-style: normal;
-    font-weight: 700;
-    src: url('assets/fonts/space-mono-v14-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* space-mono-700italic - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Space Mono';
-    font-style: italic;
-    font-weight: 700;
-    src: url('assets/fonts/space-mono-v14-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/space-mono-v14-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* space-mono-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Space Mono';
+  font-style: italic;
+  font-weight: 400;
+  src: url('assets/fonts/space-mono-v14-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* space-mono-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: url('assets/fonts/space-mono-v14-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* space-mono-700italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Space Mono';
+  font-style: italic;
+  font-weight: 700;
+  src: url('assets/fonts/space-mono-v14-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
 // Typography
 $font-primary: 'Space Mono', monospace;
@@ -61,105 +64,104 @@ $grisf: #C4C4C4;
 $grism: #D8D8D8;
 $grisc: #E5E5E5;
 
-
 // H1 desktop
 @mixin dh1 {
-    color: #000;
-    font-family: "Space Mono";
-    font-size: 96px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
+  color: #000;
+  font-family: 'Space Mono';
+  font-size: 96px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 // H2 desktop
 @mixin dh2 {
-    color: #000;
-    font-family: "Space Mono";
-    font-size: 66px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 58px;
-    text-transform: uppercase;
+  color: #000;
+  font-family: 'Space Mono';
+  font-size: 66px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 58px;
+  text-transform: uppercase;
 }
 
 // H1 mobile
 @mixin mh1 {
-    color: #000;
-    font-family: "Space Mono";
-    font-size: 27px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
+  color: #000;
+  font-family: 'Space Mono';
+  font-size: 27px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 // H2 mobile
 @mixin mh2 {
-    color: #000;
-    font-family: "Space Mono";
-    font-size: 46px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 48px;
-    text-transform: uppercase;
+  color: #000;
+  font-family: 'Space Mono';
+  font-size: 46px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 48px;
+  text-transform: uppercase;
 }
 
 // H3 desktop & mobile
 @mixin dmh3 {
-    color: #000;
-    font-family: "Space Mono";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 1.8px;
-    text-transform: uppercase;
+  color: #000;
+  font-family: 'Space Mono';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
 }
 
 // Description Photo desktop & mobile
 @mixin dmphoto {
-    color: #000;
-    font-family: "Space Mono";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
+  color: #000;
+  font-family: 'Space Mono';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
 }
 
 // Menu Mobile
 @mixin mmenu {
-    color: #FFF;
-    text-align: center;
-    font-family: "Space Mono";
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Space Mono';
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 // Footer Mobile
 @mixin dmfooter {
-    color: #000;
-    font-family: "Space Mono";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
+  color: #000;
+  font-family: 'Space Mono';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 // Modale
 @mixin modale {
-    color: #313144;
-    font-family: "Poppins";
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-transform: uppercase;
+  color: #313144;
+  font-family: 'Poppins';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
 }

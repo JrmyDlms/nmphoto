@@ -24,7 +24,6 @@ function nmphoto_register_menus() {
 }
 add_action('init', 'nmphoto_register_menus');
 
-
 // Fonction pour charger les photos
 function load_more_photos() {
     check_ajax_referer('ajax_photo_nonce', 'nonce');

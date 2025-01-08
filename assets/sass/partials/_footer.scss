@@ -1,5 +1,5 @@
 .site-footer {
-    height: 40px;
+    min-height: 40px;
     align-content: center;
     text-align: center;
     border-top: 1.5px solid $black;
@@ -18,11 +18,11 @@
     }
 }
 
-@media screen and (max-width: $mobile) {
+@media screen and (max-width: $tablet) {
     .footer-menu {
         flex-direction: column;
         gap: 24px;
-        margin: 43px 0;
+        margin: 40px 0;
     }
 
     
