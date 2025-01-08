@@ -4,6 +4,7 @@
 function nmphoto_scripts() {
     wp_enqueue_style('nmphoto-style', get_stylesheet_uri());
     wp_enqueue_script('nmphoto-scripts', get_template_directory_uri() . '/assets/js/scripts.js', array('jquery'), null, true);
+    wp_enqueue_script('lightbox-js', get_template_directory_uri() . '/assets/js/lightbox.js', array('jquery'), null, true);
     if (is_front_page()) {
         wp_enqueue_script('ajax-photo', get_template_directory_uri() . '/assets/js/ajax-photo.js', array('jquery'), null, true);
         wp_localize_script('ajax-photo', 'monThemeAjax', array(

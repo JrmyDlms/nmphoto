@@ -25,8 +25,9 @@
     }
 
     .front-wrapper {
-        max-width: 1148px;
+        max-width: 1178px;
         margin: auto;
+        padding: 0 15px;
 
         .filters-container {
             display: flex;
@@ -100,6 +101,8 @@
 
     .home {
             .front-wrapper {
+                padding: 0;
+                
                 .filters-container {
                     flex-direction: column;
 
@@ -125,6 +128,7 @@
                         width: 85%;
                         margin: auto;
                         margin-bottom: 40px;
+                        justify-items: center;
                     }
                 }
             }
