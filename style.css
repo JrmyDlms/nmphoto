@@ -620,6 +620,10 @@ a {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   margin-bottom: 40px;
+  transition: opacity 0.3s ease;
+}
+.home .front-wrapper .photos-grid .photos-container.loading {
+  opacity: 0.6;
 }
 .home .front-wrapper .photos-grid #load-more {
   background-color: #D8D8D8;

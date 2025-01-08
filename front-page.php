@@ -46,9 +46,9 @@
             </div>
 
             <select id="date-sort">
-                <option value="DESC">TRIER PAR</option>
-                <option value="DESC">Les plus récents</option>
-                <option value="ASC">Les plus anciens</option>
+                <option value="ASC">TRIER PAR</option>
+                <option value="ASC">Les plus récents</option>
+                <option value="DESC">Les plus anciens</option>
             </select>
         </div>
 
@@ -60,7 +60,7 @@
                     'post_type' => 'photo',
                     'posts_per_page' => 8,
                     'orderby' => 'date',
-                    'order' => 'DESC'
+                    'order' => 'ASC'
                 );
 
                 $query = new WP_Query($args);
