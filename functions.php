@@ -37,7 +37,8 @@ function load_more_photos() {
         'post_type' => 'photo',
         'posts_per_page' => 8,
         'paged' => $page,
-        'orderby' => 'date',
+        'orderby' => 'meta_value_num',
+        'meta_key' => 'annee',
         'order' => $ordre
     );
     

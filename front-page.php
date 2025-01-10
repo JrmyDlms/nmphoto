@@ -46,9 +46,9 @@
             </div>
 
             <select id="date-sort">
-                <option value="ASC">TRIER PAR</option>
-                <option value="ASC">Les plus récents</option>
-                <option value="DESC">Les plus anciens</option>
+                <option value="DESC">TRIER PAR</option>
+                <option value="DESC">Les plus récents</option>
+                <option value="ASC">Les plus anciens</option>
             </select>
         </div>
 
